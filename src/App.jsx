@@ -35,10 +35,11 @@ const Articles = ({ onReadArticle }) => {
   const articles = [
     {
       id: 1,
-      title: "Why the Red Star? Analyzing the Historical Reasoning Why So Many Clubs have a Red Star in Their Badge",
-      excerpt: "Across Eastern Europe, the red star remains one of the most polarizing and ubiquitous symbols in football. From Belgrade to Leipzig, its origins trace back to...",
+      title: "Зашто Црвена Звезда? Анализа историјских разлога зашто толико клубова има црвену звезду у грбу",
+      excerpt: "Широм источне Европе, црвена звезда остаје један од највише поларизујућих и најприсутнијих симбола у фудбалу. Од Београда до Лајпцига, њено порекло сеже до...",
       date: "OCT 2024",
-      tag: "Essay"
+      tag: "Essay",
+      languageNote: "English translation by the author provided with premium subscription."
     },
     {
       id: 2,
@@ -64,6 +65,11 @@ const Articles = ({ onReadArticle }) => {
           <div className="article-meta">{article.tag} // {article.date}</div>
           <h3 className="article-title">{article.title}</h3>
           <p className="article-excerpt">{article.excerpt}</p>
+          {article.languageNote && (
+            <p className="article-meta" style={{ marginTop: '0.5rem', color: 'var(--vox-yellow)' }}>
+              * {article.languageNote}
+            </p>
+          )}
         </article>
       ))}
     </div>
