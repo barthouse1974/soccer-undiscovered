@@ -111,7 +111,7 @@ function App() {
             <a href="#documentary">Documentary</a>
             <a href="#articles">Articles</a>
             <a href="#about">About</a>
-            <a href="mailto:necosarkan@gmail.com">Contact</a>
+            <a href="mailto:sarkanmediagroup@gmail.com">Contact</a>
           </nav>
         </header>
 
@@ -126,7 +126,7 @@ function App() {
 
       <footer className="footer">
         <div className="container">
-          &copy; {new Date().getFullYear()} Nebojsa Sarkanovic. All Rights Reserved. Contact: necosarkan@gmail.com
+          &copy; {new Date().getFullYear()} Nebojsa Sarkanovic. All Rights Reserved. Contact: sarkanmediagroup@gmail.com
         </div>
       </footer>
 
