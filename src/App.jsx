@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './index.css';
 
 const Hero = () => (
-  <section className="hero">
+  <section className="hero" id="documentary">
     <div className="hero-tags">
       <span className="tag highlight">Documentary</span>
       <span className="tag">In Production</span>
@@ -15,8 +15,8 @@ const Hero = () => (
 );
 
 const Bio = () => (
-  <aside className="bio-sidebar">
-    <img src="https://ui-avatars.com/api/?name=Nebojsa+Sarkanovic&size=400&background=1e1e1e&color=FFD400&bold=true&font-size=0.33" alt="Nebojsa Sarkanovic" className="bio-image" id="profile-img" />
+  <aside className="bio-sidebar" id="about">
+    <img src="/assets/nebojsa.jpg" alt="Nebojsa Sarkanovic" className="bio-image" id="profile-img" />
     <h3 className="bio-name">Nebojsa Sarkanovic</h3>
     <div className="bio-title">Sports Historian & Filmmaker</div>
     <p className="bio-text">
@@ -57,7 +57,7 @@ const Articles = ({ onReadArticle }) => {
   ];
 
   return (
-    <div className="articles-list">
+    <div className="articles-list" id="articles">
       <h2 className="section-title">Selected Writing</h2>
       {articles.map(article => (
         <article key={article.id} className="article-card" onClick={onReadArticle}>
@@ -83,7 +83,7 @@ const PaywallModal = ({ isOpen, onClose }) => {
           <br/><br/>
           Subscribe to access full historical essays, archival research, and early documentary previews.
         </p>
-        <button className="btn-subscribe" onClick={onClose}>Subscribe / Sign In</button>
+        <button className="btn-subscribe" onClick={() => alert("Subscriptions are currently closed while the documentary is in production. If you are an archive or producing partner, please reach out via the contact email.")}>Subscribe / Sign In</button>
       </div>
     </div>
   );
@@ -98,9 +98,9 @@ function App() {
         <header className="header">
           <div className="logo">SOCCER<span className="text-yellow">UNDISCOVERED</span></div>
           <nav className="header-nav">
-            <a href="#">Documentary</a>
-            <a href="#">Articles</a>
-            <a href="#">About</a>
+            <a href="#documentary">Documentary</a>
+            <a href="#articles">Articles</a>
+            <a href="#about">About</a>
             <a href="mailto:necosarkan@gmail.com">Contact</a>
           </nav>
         </header>
