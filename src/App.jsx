@@ -7,9 +7,12 @@ const Hero = () => (
       <span className="tag highlight">Documentary</span>
       <span className="tag">In Production</span>
     </div>
-    <h1 className="hero-title">Uncovering the forgotten stories of the beautiful game.</h1>
-    <p className="hero-subtitle">
-      The <strong>Jimmy Hogan Story</strong> traces the journey of the English visionary who shaped continental European football, only to be forgotten by his home country.
+    <h1 className="hero-title">"The Man England Rejected, Who Taught the World How To Beat Them"</h1>
+    <p className="hero-subtitle" style={{ color: 'var(--vox-yellow)' }}>
+      <strong>— The Jimmy Hogan Story</strong>
+    </p>
+    <p className="hero-subtitle" style={{ marginTop: '0.5rem' }}>
+      Following the journey of the English visionary who shaped continental European football, only to be forgotten by his home country.
     </p>
   </section>
 );
@@ -26,7 +29,8 @@ const Bio = () => (
       Previously, he worked independently as a sports researcher in Novi Sad, Serbia, digging into the archives to tell the grassroots stories of small clubs across Vojvodina.
     </p>
     <p className="bio-text" style={{ fontStyle: 'italic', marginTop: '1.5rem', color: 'var(--text-primary)' }}>
-      Currently in production on a feature-length documentary about the life and legacy of Jimmy Hogan.
+      Currently in production on a feature-length documentary:<br/>
+      <strong>"The Man England Rejected, Who Taught the World How To Beat Them" — The Jimmy Hogan Story.</strong>
     </p>
   </aside>
 );
